@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/show'
-
-  get 'items/create'
 
   devise_for :users 
   resources :users, only: [:show] do
