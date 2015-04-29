@@ -1,9 +1,15 @@
 class ItemsController < ApplicationController
   def create
     @item = current_user.items.build(item_params)
+    if @item.save
+      flash[:notice] = "Your item was saved!"
+    else
+      flash[:error] = "There was a problem saving your item!"
+    end
+    redirect_to user_path(current_user)
   end
 
   def item_params
-    params.require(:item).permit(:title, :details)
+    params.require(:item).permit(:name)
   end
 end
