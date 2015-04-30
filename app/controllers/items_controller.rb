@@ -9,6 +9,16 @@ class ItemsController < ApplicationController
     redirect_to user_path(current_user)
   end
 
+  def destroy
+    @item = current_user.items.find(params[:id])
+    @item.destroy
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
+  end
+
   def item_params
     params.require(:item).permit(:name)
   end
