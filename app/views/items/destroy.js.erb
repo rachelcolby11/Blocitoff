@@ -1,1 +1,5 @@
-$('#item-' +<%= @item.id %>).hide();
+ <% if @item.destroyed? %>
+  $("#item-<%= @item.id %>").fadeOut(1300);
+ <% else %>
+  $("#item-<%= @item.id %>").prepend("<div class='alert alert-danger'><%= flash[:error] = "Your comment couldn't be deleted. Please try again." %></div>");
+ <% end %>
