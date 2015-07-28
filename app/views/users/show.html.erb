@@ -1,22 +1,18 @@
-<div class="row">
-  <div class="col-md-8">
-      <h3><%= current_user.name %></h3>
-      <p><%= current_user.email %>
-  </div>
- <div class="col-md-8">
+<h1>My Checklist</h1>
 
-    <h1>My Checklist</h1>
-    <div class='new-comment'; style='margin-top: 15px;'>
-      <%= render partial: 'items/form', locals: { item: @item } %>
-    </div>
+  <h3><%= current_user.name %></h3>
+  <p><%= current_user.email %><p>
 
-    <table class="table table-hover">
-      <tr>
-        <th>Item</th>
-        <th>Days Left</th>
-       </tr> 
-      <%= render @items %>
-    </table>
+<div style='margin-top: 15px;'>
+  <%= render partial: 'items/form', locals: { item: @item } %>
+</div>
 
-  </div>  
+<table class="table table-hover">
+  <tr>
+    <th>Item</th>
+    <th>Days Left</th>
+   </tr> 
+  <%= render @items %>
+</table>
+
    
