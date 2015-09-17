@@ -1,7 +1,6 @@
 <h1>My Checklist</h1>
 
-  <h3><%= current_user.name %></h3>
-  <p><%= current_user.email %><p>
+  <h3>Welcome <%= ( current_user.name ? current_user.name : current_user.email ) %>!</h3>  
 
 <div style='margin-top: 15px;'>
   <%= render partial: 'items/form', locals: { item: @item } %>
