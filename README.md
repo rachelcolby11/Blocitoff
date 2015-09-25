@@ -1,4 +1,4 @@
-## [Blocitoff-RC](https://blocitoff-rc.herokuapp.com/)
+## [Blocitoff](https://blocitoff-rc.herokuapp.com/)
 
 Blocitoff is a self-destructing to-do list application using Ruby on Rails. Users add items to to-do lists, and items are automatically deleted after seven days. This self-destructing functionality is designed to keep the list manageable: users must prioritize and complete items or let them go.
 
