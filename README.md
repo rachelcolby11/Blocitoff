@@ -10,7 +10,7 @@ This app was created as part of Bloc.io's Full Stack Web Development course.
 ## Setup and Configuration
 **Languages, Libraries, and Frameworks:** Ruby on Rails, jQuery, AJAX, Bootstrap
 
-**Ruby version 2.0.0**
+**Ruby version 2.2.0**
 
 **Databases:** SQLite (Test, Development), PostgreSQL (Production)
 
